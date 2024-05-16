@@ -3,12 +3,6 @@
     Lampa.Platform.tv();
 
 
-/* ====== РАЗМЕР КНОПОК ====== */
-var style = document.createElement('style');
-style.innerHTML = '.full-start__footer { position: relative; top: -30; }';
-document.head.appendChild(style);
-
-
 
 /* ===== ИСТОЧНИКИ ===== */
 (function() {
