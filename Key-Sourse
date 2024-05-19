@@ -2,7 +2,7 @@
     'use strict';
     Lampa.Platform.tv();
 
-/* ===== ССЫЛКА ===== */
+/* ===== НЕТ ССЫЛКИ ===== */
 (function() {
 Lampa.Platform.tv();
 
@@ -15,7 +15,6 @@ Lampa.Controller.listener.follow('toggle', function(e) {
        setTimeout(function() {var elementIZ = $('.selectbox-item.selector > div:contains("Изменить ссылку")'); if(elementIZ.length > 0) elementIZ.parent('div').hide();}, 10);
    }
 })
-
 })();
 
 
