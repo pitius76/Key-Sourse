@@ -3,20 +3,21 @@
     Lampa.Platform.tv();
 
 
-(function() {
-Lampa.Platform.tv();
 
-var styleElement = document.createElement('style');
-styleElement.innerHTML = '.extensions__item-descr { display: none; }';
-document.head.appendChild(styleElement);
 
-Lampa.Controller.listener.follow('toggle', function(e) {
-     if(e.name == 'select') {
-       setTimeout(function() {var elementIZ = $('.selectbox-item.selector > div:contains("Изменить ссылку")'); if(elementIZ.length > 0) elementIZ.parent('div').hide();}, 10);
-   }
-})
 
-})();
+Lampa.Settings.listener.follow('open', function(e) {
+     if (e.name == 'main') {
+                setTimeout(function() {
+                  $('div[data-component="plugins"]').remove();
+    $('div[data-component="online_mod"]').remove();
+    $('div[data-component="filmix"]').remove();
+$('div[data-component="settings_modss"]').remove();
+$('div[data-component="mods_proxy"]').remove(); 
+                }, 0)
+     }
+        });
+
 
 
 /* ===== ИСТОЧНИКИ ===== */
