@@ -3,7 +3,6 @@
     Lampa.Platform.tv();
 
 
-0000000000
 
 
 Lampa.Settings.listener.follow('open', function(e) {
@@ -100,3 +99,13 @@ if (window.appready) {reload(); button();}
 
 })();
 
+
+
+
+
+/* ====== PARSER ====== */(function () {
+    'use strict';
+
+    Lampa.Utils.putScriptAsync(['https://cub.rip/plugin/etor'], function () { });
+
+})();
