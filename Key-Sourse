@@ -1,3 +1,6 @@
+8888888888888
+
+
 (function () {
     'use strict';
     Lampa.Platform.tv();
@@ -99,3 +102,4 @@ if (window.appready) {reload(); button();}
 
 
 })();
+
