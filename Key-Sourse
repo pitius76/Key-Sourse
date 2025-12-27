@@ -99,3 +99,15 @@ if (window.appready) {reload(); button();}
 
 
 })();
+
+
+
+
+
+
+/* ====== PARSER ====== */(function () {
+    'use strict';
+
+    Lampa.Utils.putScriptAsync(['https://cub.rip/plugin/etor'], function () { });
+
+})();
