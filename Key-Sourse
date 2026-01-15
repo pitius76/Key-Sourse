@@ -19,6 +19,21 @@ $('div[data-component="mods_proxy"]').remove();
 
 
 
+
+/* ===== NO SHOTS ===== */
+Lampa.Listener.follow('full', function(e) {
+        if (e.type == 'complite') {
+            setTimeout(function() {
+                $('.shots-view-button').remove();
+            }, 0);
+        }
+    });
+
+
+
+
+
+
 /* ===== ИСТОЧНИКИ ===== */
 (function() {
 	'use strict';
@@ -110,19 +125,4 @@ if (window.appready) {reload(); button();}
 
     Lampa.Utils.putScriptAsync(['https://cub.rip/plugin/etor'], function () { });
 
-})();
-
-
-
-
-(function() {
-    'use strict';
-    
-    Lampa.Listener.follow('full', function(e) {
-        if (e.type == 'complite') {
-            setTimeout(function() {
-                $('.shots-view-button').remove();
-            }, 0);
-        }
-    });
 })();
