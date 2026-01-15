@@ -14,13 +14,18 @@
 
 
 
-    Lampa.Listener.follow('full', function(e) {
+
+
+/* ===== SHOTS ===== */
+ Lampa.Listener.follow('full', function(e) {
         if (e.type == 'complete') {
             setTimeout(function() {
                 $('.shots-view-button').remove();
             }, 0);
         }
     });
+
+
 
 
 
@@ -111,5 +116,6 @@ if (window.appready) {reload(); button();}
     Lampa.Utils.putScriptAsync(['https://cub.rip/plugin/etor'], function () { });
 
 })();
+
 
 
