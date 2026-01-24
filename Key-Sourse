@@ -8,9 +8,9 @@
 Lampa.Settings.listener.follow('open', function(e) {
      if (e.name == 'main') {
                 setTimeout(function() {
-                  $('div[data-component="plugins"]').remove();
+    $('div[data-component="plugins"]').remove();
     $('div[data-component="online_mod"]').remove();
-	$('div[data-component="xsena"]').remove();
+	$('div[data-component="sisi"]').remove();
 	$('div[data-component="shots"]').remove();
     $('div[data-component="filmix"]').remove();
 $('div[data-component="settings_modss"]').remove();
@@ -128,6 +128,7 @@ if (window.appready) {reload(); button();}
     Lampa.Utils.putScriptAsync(['https://cub.rip/plugin/etor'], function () { });
 
 })();
+
 
 
 
