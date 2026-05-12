@@ -5,6 +5,8 @@
 
 
 
+
+/* ===== УБРАТЬ РАЗДЕЛЫ ===== */
 Lampa.Settings.listener.follow('open', function(e) {
      if (e.name == 'main') {
                 setTimeout(function() {
@@ -22,14 +24,15 @@ $('div[data-component="mods_proxy"]').remove();
 
 
 
-/* ===== NO SHOTS ===== */
-Lampa.Listener.follow('full', function(e) {
-        if (e.type == 'complite') {
-            setTimeout(function() {
-                $('.shots-view-button').remove();
-            }, 0);
-        }
-    });
+
+
+/* ===== УБРАТЬ КОНСОЛЬ ===== */
+Lampa.Listener.follow('app', function(e) {
+            // если приложение прогрузилось
+            if (e.type == 'ready') {
+$("[data-action=console]").eq(0).remove();
+}
+        });
 
 
 
