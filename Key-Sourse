@@ -17,7 +17,8 @@ $('div[data-component="shots"]').remove();
 $('div[data-component="filmix"]').remove();
 $('div[data-component="settings_modss"]').remove();
 $('div[data-component="mods_proxy"]').remove(); 
-                }, 0)
+$('div[data-component="remote_configuration"]').remove(); 
+}, 0)
      }
         });
 
